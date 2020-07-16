@@ -14,7 +14,14 @@ class Solution:
             result.append(listNode.val)
             listNode = listNode.next
         return result[::-1]
-
+#法2：递归做法
+class Solution: 
+# 返回从尾部到头部的列表值序列，例如[1,2,3] 
+    def printListFromTailToHead(self, listNode): 
+    # write code here 
+        if listNode is None: 
+            return [] 
+        return self.printListFromTailToHead(listNode.next) + [listNode.val]
 
 
 
