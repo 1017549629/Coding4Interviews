@@ -23,6 +23,6 @@ def replaceSpace(s):
 print(replaceSpace('We Are Happy'))
 
 ##更简单的方法
-
+##不能适用于多个空格的情况，逻辑不对
 def replacespace(s):
     return '%20'.join(list(s.split(' ')))
