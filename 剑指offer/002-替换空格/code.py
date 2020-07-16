@@ -21,3 +21,8 @@ def replaceSpace(s):
             j += 1
     return ''.join(new_array)
 print(replaceSpace('We Are Happy'))
+
+##更简单的方法
+
+def replacespace(s):
+    return '%20'.join(list(s.split(' ')))
