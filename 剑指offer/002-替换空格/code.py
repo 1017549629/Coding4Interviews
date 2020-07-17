@@ -10,7 +10,7 @@ def replaceSpace(s):
     s_len += 2 * space_count
     new_array = [' '] * s_len
     j = 0
-    for i in range(len(s)):
+    for i in range(len(s)):  #注意这个的range很容易丢掉，忘记的话程序就不对了
         if s[i] == ' ':
             new_array[j] = '%'
             new_array[j+1] = '2'
