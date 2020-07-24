@@ -1,6 +1,6 @@
 def PrintFromTopToBottom(root):
     # write code here
-    if not root: return []
+    if not root: return [] #注意这里不能返回None,而应该i是[]
     queue = [root]
     res = []
     while queue:
