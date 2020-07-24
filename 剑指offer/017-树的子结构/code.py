@@ -5,7 +5,7 @@
 #         self.left = None
 #         self.right = None
 
-def helper(treeA, treeB):
+def helper(treeA, treeB): #注意三个if的顺序如果颠倒的话会出错
     if not treeB:
         return True
     elif not treeA:
